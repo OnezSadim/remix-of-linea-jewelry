@@ -1,17 +1,17 @@
 import { useState, useRef } from "react";
 import ImageZoom from "./ImageZoom";
-import pantheonImage from "@/assets/pantheon.jpg";
-import eclipseImage from "@/assets/eclipse.jpg";
-import haloImage from "@/assets/halo.jpg";
-import organicEarring from "@/assets/organic-earring.png";
-import linkBracelet from "@/assets/link-bracelet.png";
+import bishuGlitchHoodie from "@/assets/bishu-glitch-hoodie.png";
+import bishuHoodie from "@/assets/bishu-hoodie-black.png";
+import bishuSweatshirt from "@/assets/bishu-sweatshirt-black.png";
+import bishuTeeBlack from "@/assets/bishu-tee-black.png";
+import bishuTeeCream from "@/assets/bishu-tee-cream.png";
 
 const productImages = [
-  pantheonImage,
-  organicEarring,
-  eclipseImage,
-  linkBracelet,
-  haloImage,
+  bishuGlitchHoodie,
+  bishuHoodie,
+  bishuSweatshirt,
+  bishuTeeBlack,
+  bishuTeeCream,
 ];
 
 const ProductImageGallery = () => {
@@ -50,10 +50,8 @@ const ProductImageGallery = () => {
 
     if (Math.abs(difference) > minSwipeDistance) {
       if (difference > 0) {
-        // Swipe left - next image
         nextImage();
       } else {
-        // Swipe right - previous image
         prevImage();
       }
     }
@@ -64,13 +62,13 @@ const ProductImageGallery = () => {
 
   return (
     <div className="w-full">
-      {/* Desktop: Vertical scrolling gallery (1024px and above) */}
+      {/* Desktop: Vertical scrolling gallery */}
       <div className="hidden lg:block">
         <div className="space-y-4">
           {productImages.map((image, index) => (
             <div 
               key={index} 
-              className="w-full aspect-square overflow-hidden cursor-pointer group"
+              className="w-full aspect-square overflow-hidden cursor-pointer group border border-border hover:border-primary transition-colors"
               onClick={() => handleImageClick(index)}
             >
               <img
@@ -83,11 +81,11 @@ const ProductImageGallery = () => {
         </div>
       </div>
 
-      {/* Tablet/Mobile: Image slider (below 1024px) */}
+      {/* Mobile: Image slider */}
       <div className="lg:hidden">
         <div className="relative">
           <div 
-            className="w-full aspect-square overflow-hidden cursor-pointer group touch-pan-y"
+            className="w-full aspect-square overflow-hidden cursor-pointer group touch-pan-y border border-border"
             onClick={() => handleImageClick(currentImageIndex)}
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
@@ -106,8 +104,8 @@ const ProductImageGallery = () => {
               <button
                 key={index}
                 onClick={() => setCurrentImageIndex(index)}
-                className={`w-2 h-2 rounded-full transition-colors ${
-                  index === currentImageIndex ? 'bg-foreground' : 'bg-muted'
+                className={`w-2 h-2 transition-colors ${
+                  index === currentImageIndex ? 'bg-primary' : 'bg-muted'
                 }`}
               />
             ))}

@@ -14,7 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['DM Sans', 'sans-serif'],
+        sans: ['Impact', 'Haettenschweiler', 'Arial Narrow Bold', 'sans-serif'],
+        mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+        display: ['Impact', 'Haettenschweiler', 'Arial Narrow Bold', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -51,7 +53,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        /* Linea specific colors */
+        /* Bishu specific colors */
+        "neon-green": "hsl(160 100% 50%)",
+        "electric-blue": "hsl(210 100% 60%)",
+        "safety-orange": "hsl(25 100% 55%)",
         "status-bar": {
           DEFAULT: "hsl(var(--status-bar))",
           foreground: "hsl(var(--status-bar-foreground))",
@@ -118,6 +123,13 @@ export default {
             opacity: "1",
           },
         },
+        "glitch": {
+          "0%, 100%": { transform: "translate(0)" },
+          "20%": { transform: "translate(-2px, 2px)" },
+          "40%": { transform: "translate(-2px, -2px)" },
+          "60%": { transform: "translate(2px, 2px)" },
+          "80%": { transform: "translate(2px, -2px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -125,6 +137,7 @@ export default {
         "slide-in": "slide-in 0.3s ease-out",
         "slide-in-right": "slide-in-right 0.3s ease-out",
         "fade-in": "fade-in 0.2s ease-out",
+        "glitch": "glitch 0.3s ease-in-out infinite",
       },
       transitionTimingFunction: {
         "smooth": "cubic-bezier(0.4, 0, 0.2, 1)",

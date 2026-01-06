@@ -5,7 +5,6 @@ import Footer from "../components/footer/Footer";
 import ProductImageGallery from "../components/product/ProductImageGallery";
 import ProductInfo from "../components/product/ProductInfo";
 import ProductDescription from "../components/product/ProductDescription";
-import ProductCarousel from "../components/content/ProductCarousel";
 import { 
   Breadcrumb, 
   BreadcrumbItem, 
@@ -30,18 +29,12 @@ const ProductDetail = () => {
               <BreadcrumbList>
                 <BreadcrumbItem>
                   <BreadcrumbLink asChild>
-                    <Link to="/">Home</Link>
+                    <Link to="/" className="text-muted-foreground hover:text-primary font-mono text-xs uppercase tracking-wider">Home</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
-                <BreadcrumbSeparator />
+                <BreadcrumbSeparator className="text-muted-foreground">/</BreadcrumbSeparator>
                 <BreadcrumbItem>
-                  <BreadcrumbLink asChild>
-                    <Link to="/category/earrings">Earrings</Link>
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbPage>Pantheon</BreadcrumbPage>
+                  <BreadcrumbPage className="text-foreground font-mono text-xs uppercase tracking-wider">Product</BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
@@ -55,20 +48,6 @@ const ProductDetail = () => {
               <ProductDescription />
             </div>
           </div>
-        </section>
-        
-        <section className="w-full mt-16 lg:mt-24">
-          <div className="mb-4 px-6">
-            <h2 className="text-sm font-light text-foreground">You might also like</h2>
-          </div>
-          <ProductCarousel />
-        </section>
-        
-        <section className="w-full">
-          <div className="mb-4 px-6">
-            <h2 className="text-sm font-light text-foreground">Our other Earrings</h2>
-          </div>
-          <ProductCarousel />
         </section>
       </main>
       
