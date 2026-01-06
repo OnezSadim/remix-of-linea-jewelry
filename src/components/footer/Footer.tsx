@@ -16,22 +16,22 @@ const Footer = () => {
             <h4 className="text-sm font-mono uppercase tracking-wider mb-4 text-primary">Connect</h4>
             <ul className="space-y-2">
               <li>
-                <a href="https://youtube.com/@bishu" target="_blank" rel="noopener noreferrer" className="text-sm font-mono text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://www.youtube.com/channel/UCvSpVThzt4riOtmyWjtMGug" target="_blank" rel="noopener noreferrer" className="text-sm font-mono text-muted-foreground hover:text-primary transition-colors">
                   YouTube
                 </a>
               </li>
               <li>
-                <a href="https://instagram.com/bishu" target="_blank" rel="noopener noreferrer" className="text-sm font-mono text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://www.instagram.com/welcome2bishu/" target="_blank" rel="noopener noreferrer" className="text-sm font-mono text-muted-foreground hover:text-primary transition-colors">
                   Instagram
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/bisikiw" target="_blank" rel="noopener noreferrer" className="text-sm font-mono text-muted-foreground hover:text-primary transition-colors">
-                  Twitter
+                <a href="https://x.com/welcome2bishu" target="_blank" rel="noopener noreferrer" className="text-sm font-mono text-muted-foreground hover:text-primary transition-colors">
+                  X (Twitter)
                 </a>
               </li>
               <li>
-                <a href="https://open.spotify.com/artist/bishu" target="_blank" rel="noopener noreferrer" className="text-sm font-mono text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://open.spotify.com/artist/1DzQInbDVhE9Lh5s6T0DUL?si=gbDe1rDkSOiwMeLzhkueGg" target="_blank" rel="noopener noreferrer" className="text-sm font-mono text-muted-foreground hover:text-primary transition-colors">
                   Spotify
                 </a>
               </li>
