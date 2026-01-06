@@ -16,5 +16,5 @@ export default defineConfig(({ mode }) => ({
     },
   
   },
-  base: "/remix-of-linea-jewelry"
+  base: "/"
 }));
